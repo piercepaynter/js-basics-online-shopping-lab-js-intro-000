@@ -46,9 +46,9 @@ function viewCart() {
 }
 
 function total() {
-  var totalPrice = 0;
-  for (let i=0; i < cart.length - 1; i++) {
-    totalPrice = totalPrice + getCart()[i].itemPrice;
+  //var totalPrice = 0;
+  for (let i=1; i < cart.length - 1; i++) {
+    var totalPrice = getCart()[0].itemPrice + getCart()[i].itemPrice;
     //totalPrice = totalPrice;
   }
   return totalPrice;
