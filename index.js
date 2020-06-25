@@ -48,9 +48,14 @@ function viewCart() {
 
 function total() {
   var totalPrice = 0;
-  for (let i=0; i < cart.length - 1; i++) {
-    totalPrice = totalPrice + getCart()[i].itemPrice;
-    return totalPrice;
+  if (cart.length === 0) {
+    return "0"
+  }
+  else {
+    for (let i=0; i < cart.length - 1; i++) {
+      totalPrice = totalPrice + getCart()[i].itemPrice;
+      return totalPrice;
+    }
   }
 }
 
