@@ -54,7 +54,8 @@ function total() {
   }
   else {
     for (let i=0; i < cart.length - 1; i++) {
-      totalPrice = parseInt(totalPrice, 10) + parseInt(getCart()[i].itemPrice, 10);
+      totalPrice = totalPrice + getCart()[i].itemPrice;
+      totalPrice = totalPrice;
     }
     return totalPrice;
   }
