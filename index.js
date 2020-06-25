@@ -29,22 +29,19 @@ function viewCart() {
     return "Your shopping cart is empty.";
   }
   else if (cart.length === 1) {
-    return `In your cart, you have ${cart[0][itemName]} at $${cart[0][itemPrice]}.`;
+    return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
   else {
-    var x = `In your cart, you have ${getCart()[0][itemName]} at $${getCart()[0][itemPrice]},`;
+    var x = `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice},`;
     for (let i=1; i < cart.length; i++) {
       if (i === cart.length-1) {
-        x = x + ` and ${getCart()[i][itemName]} at $${getCart()[i][itemPrice]}.`;
-        //return x;
-        console.log(x)
+        x = x + ` and ${getCart()[i].itemName} at $${getCart()[i].itemPrice}.`;
+        return x;
       }
       else {
-        x = x + ` ${getCart()[i][itemName]} at $${getCart()[i][itemPrice]},`;
+        x = x + ` ${getCart()[i].itemName} at $${getCart()[i].itemPrice},`;
       }
     }
-  //console.log(x)
-  //return x
   }
 }
 
