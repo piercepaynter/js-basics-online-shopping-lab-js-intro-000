@@ -45,7 +45,16 @@ function viewCart() {
   }
 }
 
+function total() {
+  var totalPrice = 0;
+  for (let i=0; i < cart.length - 1; i++) {
+    totalPrice = totalPrice + getCart()[i].itemPrice;
+    totalPrice = totalPrice;
+  }
+  return totalPrice;
+}
 
+/*
 function total() {
   var totalPrice = 0;
 
@@ -60,6 +69,7 @@ function total() {
     return totalPrice;
   }
 }
+*/
 
 function removeFromCart(item) {
   // write your code here
