@@ -49,7 +49,7 @@ function total() {
   var totalPrice = 0;
   for (let i=0; i < cart.length - 1; i++) {
     totalPrice = totalPrice + getCart()[i].itemPrice;
-    totalPrice = totalPrice;
+    //totalPrice = totalPrice;
   }
   return totalPrice;
 }
