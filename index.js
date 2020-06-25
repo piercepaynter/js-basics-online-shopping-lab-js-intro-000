@@ -48,6 +48,7 @@ function viewCart() {
 
 function total() {
   var totalPrice = 0;
+
   if (cart.length === 0) {
     return "0";
   }
