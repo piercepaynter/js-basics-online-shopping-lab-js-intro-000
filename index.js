@@ -59,12 +59,12 @@ function removeFromCart(item) {
   //}
   //else {
     for (let i=0; i < cart.length; i++) {
-      /*if (item != cart.itemName) {
-        return "That item is not in your cart."
-      }*/
       if (getCart()[i].itemName = item) {
-        delete getCart()[i].itemName;
-        return cart
+        delete getCart()[i];
+        return cart;
+      else {
+        
+      }
       }
     }
   //}
