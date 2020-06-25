@@ -60,7 +60,7 @@ function removeFromCart(item) {
   else {
     for (let i=0; i < cart.length; i++) {
       if (getCart()[i].itemName = item) {
-        return cart.splice(i);
+        delete getCart()[i].itemName;
       }
     }
   }
