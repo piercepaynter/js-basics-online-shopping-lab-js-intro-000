@@ -63,7 +63,7 @@ function removeFromCart(item) {
     }
   }
   if (x === 0) {
-    return "That item is not in your cart."
+    return "That item is not in your cart.";
   }
 }
 
